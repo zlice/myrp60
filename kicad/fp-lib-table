@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "rp60_parts")(type "KiCad")(uri "${KIPRJMOD}/rp60_parts.pretty")(options "")(descr ""))
+  (lib (name "heads")(type "KiCad")(uri "/home/zlice/git/keebs.pretty/.git/logs/refs/heads")(options "")(descr ""))
+)

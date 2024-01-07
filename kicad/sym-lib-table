@@ -1,0 +1,4 @@
+
+(sym_lib_table
+  (lib (name dz60_parts)(type Legacy)(uri ${KIPRJMOD}/kicad_lib_tmk/dz60_parts.lib)(options "")(descr ""))
+)
