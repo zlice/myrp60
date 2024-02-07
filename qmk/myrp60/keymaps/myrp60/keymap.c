@@ -37,7 +37,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    /*r8c4 KC_LBR*/   KC_RBRC, KC_BSLS,
        KC_LCTL, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, /*nil*/           KC_QUOT, KC_ENT,
        KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, /*nil*/           KC_UP, KC_RSFT,
-       MO(2), KC_LGUI, KC_LALT,   KC_LALT, XXXX,    KC_SPC,  KC_MINS,          ____,    KC_LBRC, KC_APP,  /*nil*/           KC_LEFT, KC_DOWN,  KC_RGHT
+       MO(2), KC_LGUI, KC_LALT,   KC_LALT, XXXX,    KC_SPC,  KC_MINS,          XXXX,    KC_LBRC, KC_APP,  /*nil*/           KC_LEFT, KC_DOWN,  KC_RGHT
       },
       // weird layout
   [1] = {
@@ -45,15 +45,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_TAB,  KC_Y,    KC_W,    KC_K,    KC_M,    KC_SLSH, KC_COMM, KC_C,    KC_F,    KC_G,    KC_Q,    /*r8c4 KC_LBRC*/  KC_RBRC, KC_BSLS,
        KC_LCTL, KC_O,    KC_E,    KC_R,    KC_T,    KC_L,    KC_D,    KC_N,    KC_I,    KC_S,    KC_A,    /*nil*/           KC_QUOT, KC_ENT,
        KC_LSFT, KC_Z,    KC_SCLN, KC_B,    KC_V,    KC_P,    KC_H,    KC_U,    KC_X,    KC_DOT,  KC_J,    /*nil*/           KC_UP, KC_RSFT,
-       MO(2), KC_LGUI, KC_LALT,   KC_LALT, XXXX,    KC_SPC,  KC_MINS,                   XXXX,    KC_APP,  /*nil*/           KC_LEFT, KC_DOWN,  KC_RGHT
+       MO(2), KC_LGUI, KC_LALT,   KC_LALT, XXXX,    KC_SPC,  KC_MINS,          XXXX,    XXXX,    KC_APP,  /*nil*/           KC_LEFT, KC_DOWN,  KC_RGHT
       },
       // mod layer
 [2] = {
        KC_GRV,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,  KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10, /*r6c4 KC_F11*/  KC_F12,  KC_DEL,
-       ____,    ____,    ____,    ____,    ____,    ____,   DF(0), KC_PGUP, KC_UP,   KC_PGDN, KC_PSCR,  /*r8c4 KC_ESC*/  KC_BSPC, ____,
+       ____,    ____,    ____,    ____,    ____,    ____,   DF(0),   KC_PGUP, KC_UP,   KC_PGDN, KC_PSCR, /*r8c4 KC_ESC*/  KC_BSPC, ____,
        ____,    ____,    ____,    ____,    KC_GRV,  ____,   KC_HOME, KC_LEFT, KC_DOWN, KC_RGHT, KC_INS, /*nil*/          KC_DEL,  ____,
-       ____,    KC_MUTE, ____,    ____,    ____,    DF(1),  KC_END,    ____,    ____,    ____, ____,    /*nil*/          ____,  ____,
-       ____,    ____, KC_SCRL,    ____,    XXXX,    ____,   ____,                        XXXX, QK_RBT,  /*nil*/          ____, ____,  ____
+       ____,    KC_MUTE, ____,    ____,    ____,    DF(1),  KC_END,    ____,    ____,  ____, ____,      /*nil*/          ____,  ____,
+       ____,    ____, KC_SCRL,    ____,    XXXX,    ____,   KC_F11,             XXXX,  XXXX,    QK_RBT, /*nil*/          ____, ____,  ____
       },
 };
 
