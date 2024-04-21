@@ -1,25 +1,30 @@
-// Copyright 2022 Stefan Kerkmann
+// Copyright 2024 myrp60 (@zlice)
 // SPDX-License-Identifier: GPL-2.0-or-later
 
 #pragma once
 
+/*
+ * Feature disable options
+ *  These options are also useful to firmware size reduction.
+ */
 
-#define DEBUG_MATRIX_SCAN_RATE
+/* disable debug print */
+//#define NO_DEBUG
 
-//#define QMK_WAITING_TEST_BUSY_PIN GP8
-//#define QMK_WAITING_TEST_YIELD_PIN GP9
+/* disable print */
+//#define NO_PRINT
+
+/* disable action features */
+//#define NO_ACTION_LAYER
+//#define NO_ACTION_TAPPING
+//#define NO_ACTION_ONESHOT
 
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET
-//#define RP2040_BOOTLOADER_DOUBLE_TAP_RESET_LED GP25
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET_TIMEOUT 500U
 
 #define USB_POLLING_INTERVAL_MS 1
 #define USB_MAX_POWER_CONSUMPTION 100
 
-//#define BACKLIGHT_PWM_CHANNEL RP2040_PWM_CHANNEL_B
+#define DEBOUNCE 6
 
-//#define AUDIO_PIN GP16
-//#define AUDIO_PWM_DRIVER PWMD0
-//#define AUDIO_PWM_CHANNEL RP2040_PWM_CHANNEL_A
-
-//#define ADC_PIN GP26
+#define FORCE_NKRO

@@ -13,7 +13,9 @@ Everything is on one side so it is cheaper to fab and so you do not see chips or
 
 # Build / Flash
 
-`CFLAGS="-Wno-error=deprecated -Wp,-w" make  handwired/onekey/myrp60:myrp60`
+`cp qmk/myrp60 <qmk_path>/keyboard`
+
+`CFLAGS="-Wno-error=deprecated -Wp,-w" make myrp60`
 
 mount and copy to rp2040 drive
 
